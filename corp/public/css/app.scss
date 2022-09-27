@@ -1,0 +1,306 @@
+/* 共通 */
+.common {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header {
+  background-color: #F0FFFF;
+}
+.contents {
+  display: flex !important;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+  /* ヘッダー */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+  }
+  .header a {
+    display: block;
+  }
+  .header a img {
+    width: 100%;
+  }
+  .headerSearch {
+    position: relative;
+  }
+  .search {
+    background-color: #fff;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+  }
+  .searchDetail {
+   position: absolute;
+   right: 65px;
+  }
+  .submit {
+    background-color: #CECED7;
+    padding: 0 15px;
+  }
+  .headerLogin {
+    .sign-out, .user-name {
+      white-space: nowrap;
+    }
+    width: 15%;
+  }
+  .headerLogin a {
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  /* グローバルナビ */
+  .globalNav {
+    background-color: #1B295A;
+    text-align: center;
+  }
+  .globalNav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .globalNav ul li {
+    list-style: none;
+    border-right :1px solid #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .globalNav ul li:last-child {
+    list-style: none;
+    text-align: center;
+    border: none;
+  }
+  .globalNav ul li a {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  .globalNav p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 10px 0;
+  }
+
+    /* 通知＆お知らせ */
+  .newsInfomation {
+    width: 30%;
+    margin: 20px 20px 0 0;
+  }
+  .notification {
+    padding: 10px;
+    background-color: #fff6ca;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .notification p {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .notification a {
+    margin-left: 10px;
+  }
+  .newsWrapper {
+    padding: 10px;
+    background-color: #fff1ff;
+    margin-bottom: 20px;
+  }
+  .wrap {
+    margin-bottom: 20px;
+  }
+  /* ドロップダウンメニュー */
+  .menu_nav nav ul ul{
+    display: block;
+  }
+  nav ul li li a{
+    padding:10px 0;
+  }
+  .has-child {
+      position: relative;
+  }
+  .globalNav ul .menuDrop li {
+      border: none;
+      padding: 10px 0;
+  }
+  /*下の階層を持っているulの指定*/
+  nav li.has-child ul{
+    position: absolute;
+    top:30px;
+    z-index: 4;
+    background:#35292c;
+    width:100%;
+      /*はじめは非表示*/
+    visibility: hidden;
+    opacity: 0;
+      /*アニメーション設定*/
+    transition: all .3s;
+    display: block;
+  }
+  /*hoverしたら表示*/
+  nav li.has-child:hover > ul,
+  nav li.has-child ul li:hover > ul,
+  nav li.has-child:active > ul,
+  nav li.has-child ul li:active > ul{
+    visibility: visible;
+    opacity: 1;
+  }
+  /*ナビゲーションaタグの形状*/
+  nav li.has-child ul li a{
+    color: #fff;
+  }
+  nav li.has-child ul li:last-child a{
+    border-bottom:none;
+  }
+
+  // views/Main/notification/index
+  /* 生徒情報 */
+.topInformation {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.topContents {
+  margin-bottom: 30px;
+}
+
+.topContents h3 {
+  margin-bottom: 10px;
+}
+
+/* スカウト中 */
+.studentContent {
+  display: flex;
+  background-color: #e7f3ff;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.studentImg {
+  padding: 20px;
+  width: 25%;
+}
+
+.studentImg img {
+  width: 100%;
+}
+
+.studentIntroduction {
+  margin-top: 40px;
+}
+
+.name, .profession {
+  font-size: 1.5rem;
+}
+
+.studentFeature {
+  color: #b96565;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.studentContent_side {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.studentContent_side a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.studentContent_side a img {
+  width: 200px;
+}
+
+/* Q&A */
+.qaContent {
+  display: flex;
+  background-color: #e7f3ff;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.qaImg {
+  padding: 20px;
+  width: 40%;
+}
+
+.qaImg img {
+  width: 100%;
+}
+
+.qaIntroduction {
+  margin-top: 40px;
+}
+
+.name, .profession {
+  font-size: 1.5rem;
+}
+
+.qaContent_side {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.qaContent_side a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.qaContent_side a img {
+  width: 200px;
+}
+
+/* システム */
+.systemContent {
+  background-color: #e7f3ff;
+  padding: 10px;
+}
+
+.systemContent span {
+  padding-right: 20px;
+}
+
+.systemContent a {
+  text-decoration: none;
+}
+
+/* イベント */
+.eventContent {
+  display: flex;
+  background-color: #e7f3ff;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.eventImg {
+  padding: 20px;
+  width: 40%;
+}
+
+.eventImg img {
+  width: 100%;
+}
+
+.eventIntroduction {
+  margin-top: 40px;
+}
+
+.eventTitle {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.paging-area {
+  margin: 1rem 5rem;
+}

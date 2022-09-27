@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+}
+
+.companyInformation_header {
+  position: relative;
+}
+
+.sort {
+  margin: 30px 0;
+}
+.sort select {
+  border: 1px solid #333;
+  padding: 2px 50px;
+  text-align: left;
+}
+
+.jobAdd {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: -75%;
+  right: 0;
+  z-index: 2;
+}
+
+.jobAdd a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.jobAdd a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.jobAdd a::after {
+  content: "";
+  background-color: #2ABB19;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  z-index: -1;
+}
+
+  .companyInformation {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+  }
+  .companyContent {
+    display: flex;
+    background-color: #E7F3FF;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .companyImg {
+    padding: 20px;
+    width: 40%;
+  }
+  .companyImg img {
+    width: 100%;
+  }
+  .companyIntroduction {
+    margin: 20px 0;
+  }
+  .companyFeature {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #B96565;
+    font-size: 1.25rem;
+  }
+  .studentEntry_btn {
+    position: absolute;
+    bottom: 5%;
+    right: 10px;
+  }
+  .studentEntry_btn a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .studentEntry_btn a img {
+    width: 140px;
+  }
+  form {
+    margin: 30px;
+  }
+
+.corporationDetail_taitle {
+    margin: 30px;
+}
+.corporationDetail {
+    background-color: #E7F3FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+.corporationDtail_introduction {
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    width: 72%;
+}
+
+.corporationImg {
+  width: 20%;
+  padding: 30px 15px;
+}
+
+.career, .qualification, .school {
+    margin-top: 30px;
+}
+.career p {
+    margin-top: 10px;
+}
+.corporationBtn {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 5px 0;
+}
+
+.form-group select {
+  padding: 5px 0;
+}
+
+.form-group textarea {
+  width: 95%;
+}
+
+.form-number {
+  width: 5%!important;
+  text-align: center;
+}
+
+.form-time {
+  width: 10%!important;
+  text-align: center;
+}
+
+.form-actions button {
+  border: none;
+}
+
+.error-messaage {
+  color: red;
+}
+
+.flash_message {
+  background-color: #2ABB19;
+  padding: 10px;
+}
+
+.upload-image img {
+  width: 100%;
+}
+
+.studentEntry_btn form {
+  margin: 0;
+}
+
+.studentEntry_btn  form input {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
